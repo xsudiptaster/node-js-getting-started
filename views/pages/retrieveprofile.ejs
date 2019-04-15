@@ -1,14 +1,14 @@
 <script src="../partials/jsforce.js"/>
+<script src="../partials/jquery-3.4.0.min.js"/>
 <script>
     var profile=
     {
-        
-        init : function()
+        sfcon=jsforce.connection(),
+        sflogin : function()
         {
-            
+            alert('Hello');
         }    
-    } 
-    profile.init();
+    }     
 </script>
 <div>
     
@@ -16,7 +16,7 @@
         <tr>
             <td>
                 <div>
-                    <div>Please Login to your salesforce instance</div>
+                    <div>Select your instance</div>
                 </div>                    
             </td>
             <td>
@@ -40,6 +40,11 @@
             </td>
             <td>
                     <input id="sfpassword" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Login" onclick="profile.sflogin()"/>
             </td>
         </tr>
     </table>
