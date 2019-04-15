@@ -1,7 +1,7 @@
 <script src="../partials/jsforce.js"/>
 <script src="../partials/jquery-3.4.0.min.js"/>
 <script>
-    var profile=
+    var pageprofile=
     {
         sfcon=jsforce.connection(),
         sflogin : function()
@@ -44,7 +44,7 @@
         </tr>
         <tr>
             <td>
-                <input type="button" value="Login" onclick="profile.sflogin()"/>
+                <input type="button" value="Login" onclick="pageprofile.sflogin()"/>
             </td>
         </tr>
     </table>
