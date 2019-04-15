@@ -1,6 +1,5 @@
 const express = require('express')
 const path = require('path')
-const jsforce= require('jsforce')
 const PORT = process.env.PORT || 5000
 
 express()
