@@ -11,19 +11,35 @@
     profile.init();
 </script>
 <div>
-    <div>
-        <div>Please Select the objects</div>
-    </div>
+    
     <table>
+        <tr>
+            <td>
+                <div>
+                    <div>Please Login to your salesforce instance</div>
+                </div>                    
+            </td>
+            <td>
+                <select >
+                    <option value="sandbox">Sandbox</option>
+                    <option value="production">Production</option>
+                </select>
+            </td>
+        </tr>
         <tr >
             <td>
-                The list of Objects
+                Username
             </td>
-            
+            <td>
+                <input id="sfusername" type="text" />
+            </td>
         </tr>
         <tr>
             <td>
-                <select id="select-object" ></select>
+                Password
+            </td>
+            <td>
+                    <input id="sfpassword" type="text" />
             </td>
         </tr>
     </table>
